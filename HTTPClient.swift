@@ -6,5 +6,5 @@
 //
 
 public protocol HTTPClient {
-    func request<T: Decodable>(urlString: String) async throws -> T
+    func request<T: Decodable>(target: TargetType) async throws -> T
 }
